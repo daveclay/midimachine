@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scriptdir=`dirname /Users/nbowen/src/midimachine/run-ogw.sh`
+scriptdir=`dirname $0`
 outputfile=/dev/null
 
 if [[ $# == 2 ]]; then
