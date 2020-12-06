@@ -1,5 +1,6 @@
-package com.daveclay.midi;
+package com.daveclay.midi.ogws;
 
+import com.daveclay.midi.*;
 import com.daveclay.midi.sequence.*;
 import static com.daveclay.midi.NoteConstants.*;
 import static com.daveclay.midi.ChordType.*;
