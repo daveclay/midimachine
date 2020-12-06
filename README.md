@@ -55,10 +55,10 @@ The syntax is:
 
 So, an example would be:
 
-    ./run-ogws.sh FolkMusic ~/Desktop/Folk-Hit.mid
+    ./run-ogw.sh FolkMusic ~/Desktop/Folk-Hit.mid
 to save a midi file, or
 
-    ./run-ogws.sh TripHopMusic
+    ./run-ogw.sh TripHopMusic
 to simply listen for pleasure.
 
 
