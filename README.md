@@ -1,3 +1,33 @@
+The Wrapper Script
+------------------
+
+For now, to keep things moving, the One Groove Wonder apps (all moved into the ogws package) can be fired off with an included run-ogws.sh.
+
+The syntax is:
+
+    ./run-ogws.sh ClassName
+   or
+
+    ./run-ogws.sh ClassName output-file.mid
+
+*(Currently, the wrapper script does **not** pass further args through to the java main method.)*
+
+**OWGS Apps** (as of the time of this writing):
+* DrumSolo
+* FolkMusic
+* PianoSolo
+* RockMusic
+* TripHopMusic
+
+So, an example would be:
+
+    ./run-ogws.sh FolkMusic ~/Desktop/Folk-Hit.mid
+to save a midi file, or
+
+    ./run-ogws.sh TripHopMusic
+to simply listen for pleasure.
+
+
 Ticks, Beats, Positions and Patterns
 ------------------------------------
 
@@ -14,8 +44,8 @@ The UI defaults to 32 positions visible at a time. As the clock moves through ea
 
 * Presently there is no reason that this needs to be the limit - it just happens to be easier to deal in a set number of ticks per beat in order to calculate note-on and note-off events.
 
-
-------------------------------------
+Some Math
+---------
 
 2048 / 32 = 64
 
