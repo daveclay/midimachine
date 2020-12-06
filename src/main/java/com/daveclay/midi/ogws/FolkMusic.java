@@ -1,5 +1,6 @@
-package com.daveclay.midi;
+package com.daveclay.midi.ogws;
 
+import com.daveclay.midi.*;
 import com.daveclay.midi.sequence.*;
 
 import static com.daveclay.midi.ChordType.*;
@@ -60,7 +61,7 @@ public class FolkMusic {
 		InstrumentTrack guitarTrack = midiSequencer.createInstrumentTrack(3, guitarProgram);
 		
 		int[] chordRootOptions = new int[] { scale[0], scale[0] + MAJOR_SECOND, scale[0] + MAJOR_THIRD, scale[0] + FOURTH, scale[0] + FIFTH, scale[0] + MAJOR_SIXTH, scale[0] + MAJOR_SEVENTH };
-		ChordType[][] chordTypeOptions = new ChordType[][] { 
+		ChordType[][] chordTypeOptions = new ChordType[][] {
 				new ChordType[] {MAJOR_TRIAD, DOMINANT_SEVENTH_CHORD, MAJOR_SUSPENDED_FOURTH_TRIAD, MAJOR_SUSPENDED_SECOND_TRIAD},
 				new ChordType[] {MINOR_TRIAD, MINOR_SEVENTH_CHORD}, 
 				new ChordType[] {MINOR_TRIAD, MINOR_SEVENTH_CHORD}, 

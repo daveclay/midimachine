@@ -48,8 +48,10 @@ public class NotesSequenceEvent implements SequenceEvent {
 			throws InvalidMidiDataException {
 		int currentTick = tick;
 		for (Note note: notes) {
-			note.addMIDIEvents(track, channel, currentTick);
-			currentTick += strumTicks;
+			if (note != null) {
+				note.addMIDIEvents(track, channel, currentTick);
+				currentTick += strumTicks;
+			}
 		}
 	}
 	

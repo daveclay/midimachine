@@ -39,17 +39,19 @@ public abstract class AbstractRandomNoteStrategy implements RealtimeNotesStrateg
 
 		int duration = minDuration + (RandyTheRandom.nextInt(maxDuration - minDuration + 1));
 		int size = availableNotes.size();
-		int i = RandyTheRandom.nextInt(size);
-		NoteValue note = availableNotes.get(i);
+		Note noteObj = null;
+		if (size > 0) {
+			int i = RandyTheRandom.nextInt(size);
+			NoteValue note = availableNotes.get(i);
 
-		// Todo: add smoothing of velocity based on duration (short loud notes are more abrupt)
-		int velocity = RandyTheRandom.randomIntBetweenExclusive(minVelocity, maxVelocity);
+			// Todo: add smoothing of velocity based on duration (short loud notes are more abrupt)
+			int velocity = RandyTheRandom.randomIntBetweenExclusive(minVelocity, maxVelocity);
 
-		Note noteObj = new Note();
-		noteObj.setKey(note.getIntValue());
-		noteObj.setVelocity(velocity);
-		noteObj.setDuration(duration);
-
+			noteObj = new Note();
+			noteObj.setKey(note.getIntValue());
+			noteObj.setVelocity(velocity);
+			noteObj.setDuration(duration);
+		}
 		return noteObj;
 	}
 

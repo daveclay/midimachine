@@ -1,5 +1,6 @@
-package com.daveclay.midi;
+package com.daveclay.midi.ogws;
 
+import com.daveclay.midi.*;
 import com.daveclay.midi.sequence.*;
 import com.daveclay.midi.random.PhraseBuildingStrategy;
 import com.daveclay.midi.random.RandomInstrument;
